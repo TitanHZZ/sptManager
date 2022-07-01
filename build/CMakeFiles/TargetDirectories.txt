@@ -1,0 +1,9 @@
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/Experimental.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/Nightly.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/Continuous.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/NightlyMemoryCheck.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/sptManager.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/PACKAGE.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/RUN_TESTS.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/ALL_BUILD.dir
+C:/Dev/c++/repos/sptManager/build/CMakeFiles/ZERO_CHECK.dir
