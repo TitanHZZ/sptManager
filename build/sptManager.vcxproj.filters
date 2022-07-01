@@ -9,6 +9,9 @@
     <CustomBuild Include="C:\Dev\c++\repos\sptManager\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Natvis Include="C:\Program Files\vcpkg\installed\x86-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
     <Filter Include="Source Files">
       <UniqueIdentifier>{A8D35E14-A3C4-3B68-B414-7E4DA8E9865C}</UniqueIdentifier>
     </Filter>

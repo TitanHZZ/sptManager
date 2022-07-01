@@ -1091,10 +1091,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
@@ -1352,6 +1352,18 @@
 			],
 			"type" : "STRING",
 			"value" : "1500"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding nlohmann_json"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[C:/Program Files/vcpkg/installed/x86-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.10.5()]"
 		},
 		{
 			"name" : "GITCOMMAND",
@@ -1688,6 +1700,18 @@
 			],
 			"type" : "PATH",
 			"value" : "C:/Program Files/vcpkg/installed"
+		},
+		{
+			"name" : "nlohmann_json_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for nlohmann_json."
+				}
+			],
+			"type" : "PATH",
+			"value" : "C:/Program Files/vcpkg/installed/x86-windows/share/nlohmann_json"
 		},
 		{
 			"name" : "sptManager_BINARY_DIR",
