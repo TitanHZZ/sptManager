@@ -1,16 +1,14 @@
-#include <iostream>
-#include <chrono>
+// file read
+#include <fstream>
 
 // windows includes
 #include <Windows.h>
-#include <Tlhelp32.h>
 
-// requests and json
-#include <cpr/cpr.h>
+// json
 #include <nlohmann/json.hpp>
 
 // remove the console window
-// #pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
 
 // media Commands for spotify
 enum SPOTIFY_COMMANDS
@@ -65,16 +63,15 @@ void bypass_ad(nlohmann::json& config_j)
 
     // killSpotify();
     // terminate spotify sending a SIGTERM
-    try
-    {
-        system("taskkill /IM spotify.exe");
-    } catch(const std::exception&) {}
+    system("taskkill /IM spotify.exe");
     Sleep(config_j["timings"]["timeToWaitAfterClosingSpotify"]);
     // Sleep(1000);
 
     /// start spotify ///////////////
 
-    ShellExecuteA(NULL, "open", "C:\\Users\\Titan\\AppData\\Roaming\\Spotify\\Spotify.exe", NULL, NULL, SW_SHOWMAXIMIZED);
+    const std::string sptDir = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyInstallationDir"]) + "Spotify.exe";
+    ShellExecuteA(NULL, "open", sptDir.c_str(), NULL, NULL, SW_SHOWMAXIMIZED);
+    // ShellExecuteA(NULL, "open", "C:\\Users\\Titan\\AppData\\Roaming\\Spotify\\Spotify.exe", NULL, NULL, SW_SHOWMAXIMIZED);
 
     // waits for the app
     waitForWindow("Spotify Free", 50);
@@ -136,8 +133,7 @@ int main(int argc, char** argv)
 {
     // read the JSON config file
     std::ifstream config_f("config.json");
-    nlohmann::json config_j;
-    config_f >> config_j;
+    nlohmann::json config_j = nlohmann::json::parse(config_f);
 
     // starts the loop that checks the current playing information
     while (true)
