@@ -1,0 +1,13 @@
+{
+  "generalConfiguration": {
+    "minimizeSpotify": true,
+    "respectLastSpotifyWindowState": true,
+    "SpotifyInstallationDir" : "C:/Users/Titan/AppData/Roaming/Spotify/"
+  },
+  "timings": {
+    "timeToWaitAfterClosingSpotify": 1000,
+    "timeToWaitAfterSpotifySpotifyOpened": 200,
+    "timeToWaitAfterSettingSpotifyAsTheForegroundWindow": 200,
+    "timeToWaitBeforePlayingTheMediaInSpotify": 100
+  }
+}
