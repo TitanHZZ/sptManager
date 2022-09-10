@@ -7,7 +7,7 @@
 // basic platform check for no error reports on windows
 #ifdef __linux__
 
-#include <iostream>
+// #include <iostream>
 #include <unistd.h>
 #include <fstream>
 #include <nlohmann/json.hpp>
@@ -81,7 +81,7 @@ static gboolean playercmd_metadata(PlayerctlPlayer *player) {
     }
 
     if (data != NULL) {
-        std::cout << data << std::endl;
+        // std::cout << data << std::endl;
         if (!g_strcmp0(data, "Advertisement"))
         {
             manage_ad();

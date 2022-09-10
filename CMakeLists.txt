@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24.1)
-project(sptManager VERSION 1.1.0)
+project(sptManager VERSION 2.0.0)
 
 include(CTest)
 enable_testing()

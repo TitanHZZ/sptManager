@@ -31,11 +31,11 @@
 *.out
 *.app
 
-# temp file
-temp.log
-
 # build folder
 build/
 
 # .vscode folder
 .vscode/
+
+# temp file
+temp.log
