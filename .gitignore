@@ -33,3 +33,9 @@
 
 # temp file
 temp.log
+
+# build folder
+build/
+
+# .vscode folder
+.vscode/

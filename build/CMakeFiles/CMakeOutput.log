@@ -1,263 +1,325 @@
-The system is: Windows - 10.0.22621 - AMD64
+The system is: Linux - 5.19.2-arch1-1 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler:  
+Compiler: /usr/bin/clang 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Build started 7/1/2022 4:21:56 PM.
-Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
-PrepareForBuild:
-  Creating directory "Debug\".
-  Creating directory "Debug\CompilerIdC.tlog\".
-InitializeBuildStatus:
-  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
-VcpkgTripletSelection:
-  Using triplet "x86-windows" from "C:\Program Files\vcpkg\installed\x86-windows\"
-ClCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x86\CL.exe /c /I"C:\Program Files\vcpkg\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
-  CMakeCCompilerId.c
-Link:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\debug\lib" /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\Program Files\vcpkg\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe
-AppLocalFromInstalled:
-  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
-  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
-PostBuildEvent:
-  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
-  :VCEnd
-  CMAKE_C_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x86\cl.exe
-FinalizeBuildStatus:
-  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
-  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:01.08
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
-
-The C compiler identification is MSVC, found in "C:/Dev/c++/repos/sptManager/build/CMakeFiles/3.22.0-rc2/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is Clang, found in "/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/3.24.1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler:  
+Compiler: /usr/bin/clang++ 
 Build flags: 
 Id flags:  
 
 The output was:
 0
-Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Build started 7/1/2022 4:21:58 PM.
-Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
-PrepareForBuild:
-  Creating directory "Debug\".
-  Creating directory "Debug\CompilerIdCXX.tlog\".
-InitializeBuildStatus:
-  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
-VcpkgTripletSelection:
-  Using triplet "x86-windows" from "C:\Program Files\vcpkg\installed\x86-windows\"
-ClCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x86\CL.exe /c /I"C:\Program Files\vcpkg\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
-  CMakeCXXCompilerId.cpp
-Link:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\debug\lib" /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\debug\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\Program Files\vcpkg\installed\x86-windows\debug\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe
-AppLocalFromInstalled:
-  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
-  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\debug\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
-PostBuildEvent:
-  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
-  :VCEnd
-  CMAKE_CXX_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.32.31326\bin\Hostx64\x86\cl.exe
-FinalizeBuildStatus:
-  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
-  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:00.91
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
-
-The CXX compiler identification is MSVC, found in "C:/Dev/c++/repos/sptManager/build/CMakeFiles/3.22.0-rc2/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is Clang, found in "/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/3.24.1/CompilerIdCXX/a.out"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Dev/c++/repos/sptManager/build/CMakeFiles/CMakeTmp
+Change Dir: /home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_2670e.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x86
-  CMakeCCompilerABI.c
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2670e.dir\Debug\\" /Fd"cmTC_2670e.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
-  cmTC_2670e.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\CMakeTmp\Debug\cmTC_2670e.exe
+Run Build Command(s):/usr/bin/ninja cmTC_389e5 && [1/2] Building C object CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o
+clang version 14.0.6
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/bin/clang-14" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/14.0.6/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/clang/14.0.6/include
+ /usr/local/include
+ /usr/include
+End of search list.
+[2/2] Linking C executable cmTC_389e5
+clang version 14.0.6
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/usr/bin/ld" -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_389e5 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o
 
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/clang/14.0.6/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/clang/14.0.6/include] ==> [/usr/lib/clang/14.0.6/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/clang/14.0.6/include;/usr/local/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_389e5 && [1/2] Building C object CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [clang version 14.0.6]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/bin/clang-14" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/clang/14.0.6/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/clang/14.0.6/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking C executable cmTC_389e5]
+  ignore line: [clang version 14.0.6]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_389e5 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_389e5] ==> ignore
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o]
+    arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+    arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_389e5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0;/usr/lib64;/lib64;/lib;/usr/lib]
+  implicit fwks: []
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Dev/c++/repos/sptManager/build/CMakeFiles/CMakeTmp
+Change Dir: /home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_61940.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.32.31332 for x86
-  CMakeCXXCompilerABI.cpp
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_61940.dir\Debug\\" /Fd"cmTC_61940.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_61940.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\CMakeTmp\Debug\cmTC_61940.exe
-
-
-
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler:  
-Build flags: /DWIN32;/D_WINDOWS;/W3
-Id flags:  
-
-The output was:
-0
-MSBuild version 17.3.1+2badb37d1 for .NET Framework
-Build started 8/25/2022 11:21:27 AM.
-Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
-PrepareForBuild:
-  Creating directory "Debug\".
-  Creating directory "Debug\CompilerIdC.tlog\".
-InitializeBuildStatus:
-  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
-VcpkgTripletSelection:
-  Using triplet "x86-windows" from "C:\Program Files\vcpkg\installed\x86-windows\"
-  Using normalized configuration "Release"
-ClCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x86\CL.exe /c /I"C:\Program Files\vcpkg\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
-  CMakeCCompilerId.c
-Link:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\lib" /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\Program Files\vcpkg\installed\x86-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe
-AppLocalFromInstalled:
-  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
-  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdC.tlog\CompilerIdC.write.1u.tlog" "Debug\vcpkg.applocal.log"
-PostBuildEvent:
-  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
-  :VCEnd
-  CMAKE_C_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x86\cl.exe
-FinalizeBuildStatus:
-  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
-  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:00.97
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
-
-The C compiler identification is MSVC, found in "C:/Dev/c++/repos/sptManager/build/CMakeFiles/3.22.0-rc2/CompilerIdC/CompilerIdC.exe"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler:  
-Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
-Id flags:  
-
-The output was:
-0
-MSBuild version 17.3.1+2badb37d1 for .NET Framework
-Build started 8/25/2022 11:21:28 AM.
-Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
-PrepareForBuild:
-  Creating directory "Debug\".
-  Creating directory "Debug\CompilerIdCXX.tlog\".
-InitializeBuildStatus:
-  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
-VcpkgTripletSelection:
-  Using triplet "x86-windows" from "C:\Program Files\vcpkg\installed\x86-windows\"
-  Using normalized configuration "Release"
-ClCompile:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x86\CL.exe /c /I"C:\Program Files\vcpkg\installed\x86-windows\include" /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc143.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
-  CMakeCXXCompilerId.cpp
-Link:
-  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\HostX64\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\lib" /LIBPATH:"C:\Program Files\vcpkg\installed\x86-windows\lib\manual-link" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib "C:\Program Files\vcpkg\installed\x86-windows\lib\*.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe
-AppLocalFromInstalled:
-  pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
-  'pwsh.exe' is not recognized as an internal or external command,
-  operable program or batch file.
-  The command "pwsh.exe -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"" exited with code 9009.
-  "C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -noprofile -File "C:\Program Files\vcpkg\scripts\buildsystems\msbuild\applocal.ps1" "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.exe" "C:\Program Files\vcpkg\installed\x86-windows\bin" "Debug\CompilerIdCXX.tlog\CompilerIdCXX.write.1u.tlog" "Debug\vcpkg.applocal.log"
-PostBuildEvent:
-  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
-  :VCEnd
-  CMAKE_CXX_COMPILER=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\bin\Hostx64\x86\cl.exe
-FinalizeBuildStatus:
-  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
-  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "C:\Dev\c++\repos\sptManager\build\CMakeFiles\3.22.0-rc2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
-
-Build succeeded.
-    0 Warning(s)
-    0 Error(s)
-
-Time Elapsed 00:00:00.83
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
-
-The CXX compiler identification is MSVC, found in "C:/Dev/c++/repos/sptManager/build/CMakeFiles/3.22.0-rc2/CompilerIdCXX/CompilerIdCXX.exe"
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Dev/c++/repos/sptManager/build/CMakeFiles/CMakeTmp
-
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_8971b.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31629 for x86
-  CMakeCCompilerABI.c
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8971b.dir\Debug\\" /Fd"cmTC_8971b.dir\Debug\vc143.pdb" /external:W3 /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c"
-  cmTC_8971b.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\CMakeTmp\Debug\cmTC_8971b.exe
+Run Build Command(s):/usr/bin/ninja cmTC_eb710 && [1/2] Building CXX object CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o
+clang version 14.0.6
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/bin/clang-14" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward -internal-isystem /usr/lib/clang/14.0.6/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0
+ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu
+ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward
+ /usr/lib/clang/14.0.6/include
+ /usr/local/include
+ /usr/include
+End of search list.
+[2/2] Linking CXX executable cmTC_eb710
+clang version 14.0.6
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/usr/bin/ld" -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eb710 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o
 
 
 
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Dev/c++/repos/sptManager/build/CMakeFiles/CMakeTmp
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0]
+    add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu]
+    add: [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward]
+    add: [/usr/lib/clang/14.0.6/include]
+    add: [/usr/local/include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0] ==> [/usr/include/c++/12.2.0]
+  collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu] ==> [/usr/include/c++/12.2.0/x86_64-pc-linux-gnu]
+  collapse include dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward] ==> [/usr/include/c++/12.2.0/backward]
+  collapse include dir [/usr/lib/clang/14.0.6/include] ==> [/usr/lib/clang/14.0.6/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/12.2.0;/usr/include/c++/12.2.0/x86_64-pc-linux-gnu;/usr/include/c++/12.2.0/backward;/usr/lib/clang/14.0.6/include;/usr/local/include;/usr/include]
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe cmTC_1f851.vcxproj /p:Configuration=Debug /p:Platform=win32 /p:VisualStudioVersion=17.0 /v:m && MSBuild version 17.3.1+2badb37d1 for .NET Framework
-  Microsoft (R) C/C++ Optimizing Compiler Version 19.33.31629 for x86
-  CMakeCXXCompilerABI.cpp
-  Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1f851.dir\Debug\\" /Fd"cmTC_1f851.dir\Debug\vc143.pdb" /external:W3 /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_1f851.vcxproj -> C:\Dev\c++\repos\sptManager\build\CMakeFiles\CMakeTmp\Debug\cmTC_1f851.exe
 
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_eb710 && [1/2] Building CXX object CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [clang version 14.0.6]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ (in-process)]
+  ignore line: [ "/usr/bin/clang-14" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -resource-dir /usr/lib/clang/14.0.6 -dependency-file CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0 -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward -internal-isystem /usr/lib/clang/14.0.6/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/titanhzz/dev/c++/sptManager/build/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 14.0.6 based upon LLVM 14.0.6 default target x86_64-pc-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../x86_64-pc-linux-gnu/include"]
+  ignore line: [ignoring nonexistent directory "/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0]
+  ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/x86_64-pc-linux-gnu]
+  ignore line: [ /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../include/c++/12.2.0/backward]
+  ignore line: [ /usr/lib/clang/14.0.6/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking CXX executable cmTC_eb710]
+  ignore line: [clang version 14.0.6]
+  ignore line: [Target: x86_64-pc-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/bin]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Candidate multilib: 32]
+  ignore line: [@m32]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/bin/ld" -pie --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_eb710 /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0 -L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/lib -L/usr/lib CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_eb710] ==> ignore
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o]
+    arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+    arg [-L/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64] ==> dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/lib] ==> dir [/lib]
+    arg [-L/usr/lib] ==> dir [/usr/lib]
+    arg [CMakeFiles/cmTC_eb710.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o]
+    arg [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o] ==> obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o]
+  collapse obj [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+  collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0] ==> [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0]
+  collapse library dir [/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib] ==> [/lib]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o;/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o;/usr/lib64/crtn.o]
+  implicit dirs: [/usr/lib64/gcc/x86_64-pc-linux-gnu/12.2.0;/usr/lib64;/lib64;/lib;/usr/lib]
+  implicit fwks: []
 
 

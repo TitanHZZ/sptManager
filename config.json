@@ -1,8 +1,8 @@
 {
   "generalConfiguration": {
+    "maximizeSpotify": true,
     "minimizeSpotify": true,
-    "respectLastSpotifyWindowState": true,
-    "SpotifyInstallationDir" : "C:/Users/Titan/AppData/Roaming/Spotify/"
+    "SpotifyInstallationDir" : "/var/lib/snapd/snap/bin/"
   },
   "timings": {
     "timeToWaitAfterClosingSpotify": 1000,
