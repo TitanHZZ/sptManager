@@ -23,7 +23,7 @@
 #include <nlohmann/json.hpp>
 
 // remove the console window
-// #pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
 
 #define CHECK_HR(hr) if (FAILED(hr)) { /*std::cout << "error" << std::endl;*/ return 1; }
 
@@ -143,7 +143,7 @@ bool checkAd(IAudioSessionManager2Ptr mgr) {
             if (procNameStr.find("Spotify") != std::string::npos)
             {
                 // 'pMeterInformation' wil be used to get the current peak volume output
-                CComQIPtr<IAudioMeterInformation> pMeterInformation = control2;
+                CComQIPtr<IAudioMeterInformation> pMeterInformation = (CComQIPtr<IAudioMeterInformation>) control2;
                 DWORD nMask;
                 pMeterInformation->QueryHardwareSupport(&nMask);
 
@@ -231,11 +231,11 @@ void bypass_ad(nlohmann::json& config_j, HWND& spt_handle)
 
     Sleep(config_j["timings"]["timeToWaitAfterSettingSpotifyAsTheForegroundWindow"]);
 
-    /// minimize or restore spotify if needed ///
-    if (config_j["generalConfiguration"]["respectLastSpotifyWindowState"])
+    /// maximize or minimize spotify if needed ///
+    if (config_j["generalConfiguration"]["maximizeSpotify"])
     {
-        // set spotify window state to be the same it was before being closed
-        ShowWindow(handle, nCurShow);
+        // maximize the spotify window
+        ShowWindow(handle, SW_SHOWMAXIMIZED);
     }
     else if (config_j["generalConfiguration"]["minimizeSpotify"])
     {
