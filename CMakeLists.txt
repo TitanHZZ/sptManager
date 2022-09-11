@@ -13,7 +13,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # vcpkg -- could alse change the config on vscode
-include("C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake") ## change for your system if needed
+include("/opt/vcpkg/scripts/buildsystems/vcpkg.cmake") ## change for your system if needed
+# C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake
 
 # get json package from vcpkg
 find_package(nlohmann_json CONFIG REQUIRED)

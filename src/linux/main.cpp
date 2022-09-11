@@ -30,7 +30,10 @@ static void exit_func(GList **available_players, PlayerctlPlayerManager **manage
 }
 
 static void manage_ad() {
-    spt_window_action('c'); // close spt
+    // 'c' is to close spotify on the first call coming from the metadata callback
+    // 'i' is an invalid option (will not do anything to the spotify window) but without it,
+    // spt will not start playing after the "managed_player_execute_command(player, "play");" call in player_appeared_callback
+    spt_window_action(!play_spt ? 'c' : 'i');
     sleep((int) config_j["timings"]["timeToWaitAfterClosingSpotify"] / 1000);
 
     // create a new child process
@@ -43,9 +46,9 @@ static void manage_ad() {
             const std::string sptExecuteCmd = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyInstallationDir"]) + "spotify 2&> temp.log";
             exit(system(sptExecuteCmd.c_str()));
         }
-    }
 
-    play_spt = TRUE;
+        play_spt = TRUE;
+    }
 }
 
 static gboolean playercmd_play(PlayerctlPlayer *player) {
