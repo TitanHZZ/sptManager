@@ -193,12 +193,12 @@ void bypass_ad(nlohmann::json& config_j, HWND& spt_handle)
 {
     /// get spotify window state ////
     // declares and defines variables that are going to receive the window "stats"
-    WINDOWPLACEMENT wd = { sizeof(WINDOWPLACEMENT) };
+    /*WINDOWPLACEMENT wd = { sizeof(WINDOWPLACEMENT) };
     UINT nCurShow;
 
     // gets the window state and saves them
     GetWindowPlacement(spt_handle, &wd);
-    nCurShow = wd.showCmd;
+    nCurShow = wd.showCmd;*/
 
     /// kill spotify ////////////////
     // terminate spotify sending a SIGTERM
@@ -236,6 +236,7 @@ void bypass_ad(nlohmann::json& config_j, HWND& spt_handle)
     {
         // maximize the spotify window
         ShowWindow(handle, SW_SHOWMAXIMIZED);
+        // ShowWindow(handle, nCurShow);
     }
     else if (config_j["generalConfiguration"]["minimizeSpotify"])
     {
