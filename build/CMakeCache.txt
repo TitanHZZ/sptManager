@@ -26,11 +26,14 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Release
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
+
+//`clang-scan-deps` dependency scanner
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/usr/bin/clang-scan-deps
 
 //Generate index for LLVM archive
 CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
@@ -50,11 +53,14 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/clang
 
 //LLVM archiver
 CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+
+//`clang-scan-deps` dependency scanner
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS:FILEPATH=/usr/bin/clang-scan-deps
 
 //Generate index for LLVM archive
 CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
@@ -293,7 +299,7 @@ GITCOMMAND:FILEPATH=/usr/bin/git
 MAKECOMMAND:STRING=/usr/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
 //Path to the memory checking command, used for memory error detection.
-MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
+MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
 
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
@@ -382,9 +388,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/titanhzz/dev/c++/sptManager/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=24
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=26
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=2
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/usr/bin/cmake
 //Path to cpack program executable.
@@ -397,6 +403,8 @@ CMAKE_CTEST_COMMAND:INTERNAL=/usr/bin/ctest
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS
+CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
 CMAKE_CXX_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS
@@ -413,6 +421,8 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER_CLANG_SCAN_DEPS
+CMAKE_C_COMPILER_CLANG_SCAN_DEPS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
 CMAKE_C_COMPILER_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
@@ -559,7 +569,7 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.1()]
 //Details about finding nlohmann_json
 FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/opt/vcpkg/installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.2()]
 //ADVANCED property for variable: GITCOMMAND
@@ -585,16 +595,16 @@ GLIB_STATIC_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;
 GLIB_STATIC_CFLAGS_I:INTERNAL=
 GLIB_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
 GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-4
-GLIB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lglib-2.0;-pthread;-lm;-L/usr/lib;-lpcre;-lsysprof-capture-4;-pthread
+GLIB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lglib-2.0;-lm;-pthread;-L/usr/lib;-lsysprof-capture-4;-pthread;-lpcre2-8
 GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
 GLIB_STATIC_LIBDIR:INTERNAL=
-GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;m;pcre;sysprof-capture-4
+GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;m;sysprof-capture-4;pcre2-8
 GLIB_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib;/usr/lib
 GLIB_STATIC_LIBS:INTERNAL=
 GLIB_STATIC_LIBS_L:INTERNAL=
 GLIB_STATIC_LIBS_OTHER:INTERNAL=
 GLIB_STATIC_LIBS_PATHS:INTERNAL=
-GLIB_VERSION:INTERNAL=2.72.3
+GLIB_VERSION:INTERNAL=2.76.1
 GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
 GLIB_glib-2.0_LIBDIR:INTERNAL=
 GLIB_glib-2.0_PREFIX:INTERNAL=
@@ -643,7 +653,7 @@ X11_STATIC_LIBS:INTERNAL=
 X11_STATIC_LIBS_L:INTERNAL=
 X11_STATIC_LIBS_OTHER:INTERNAL=
 X11_STATIC_LIBS_PATHS:INTERNAL=
-X11_VERSION:INTERNAL=1.8.1
+X11_VERSION:INTERNAL=1.8.4
 X11_x11_INCLUDEDIR:INTERNAL=
 X11_x11_LIBDIR:INTERNAL=
 X11_x11_PREFIX:INTERNAL=

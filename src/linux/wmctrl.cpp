@@ -112,7 +112,9 @@ static void execute_action_window(Display *disp, char mode) {
 
       if (window_name) {
 
-          if (!g_strcmp0(window_name, "Spotify"))
+          // check if window has "Spotify" in its name (Spotify client has changed name several times before but "Spotify" is always in its name)
+          // check substring
+          if (strstr(window_name, "Spotify"))
           {
             target_window = client_list[i];
             g_free(window_name);
@@ -124,26 +126,30 @@ static void execute_action_window(Display *disp, char mode) {
     }
 
     g_free(client_list);
-    switch (mode) {
-        case 'c':
-            // close window
-            send_client_msg(disp, target_window, (char *) "_NET_CLOSE_WINDOW", 0, 0, 0, 0, 0);
-            break;
-        case 'M' : {
-                // maximize window
-                Atom prop1 = XInternAtom(disp, "_NET_WM_STATE_MAXIMIZED_VERT", False);
-                Atom prop2 = XInternAtom(disp, "_NET_WM_STATE_MAXIMIZED_HORZ", False);
-                send_client_msg(disp, target_window, (char *) "_NET_WM_STATE", _NET_WM_STATE_ADD, (unsigned long) prop1, (unsigned long) prop2, 0, 0);
-                break;
-            }
-        case 'm': {
-                // minimize window
-                Atom prop1 = XInternAtom(disp, "_NET_WM_STATE_HIDDEN", False);
-                send_client_msg(disp, target_window, (char *) "_NET_WM_STATE", _NET_WM_STATE_ADD, (unsigned long) prop1, (unsigned long) NULL, 0, 0);
-                break;
-        }
-        default:
-            break;
+
+    // make sure we have a valid window
+    if (target_window) {
+      switch (mode) {
+          case 'c':
+              // close window
+              send_client_msg(disp, target_window, (char *) "_NET_CLOSE_WINDOW", 0, 0, 0, 0, 0);
+              break;
+          case 'M' : {
+                  // maximize window
+                  Atom prop1 = XInternAtom(disp, "_NET_WM_STATE_MAXIMIZED_VERT", False);
+                  Atom prop2 = XInternAtom(disp, "_NET_WM_STATE_MAXIMIZED_HORZ", False);
+                  send_client_msg(disp, target_window, (char *) "_NET_WM_STATE", _NET_WM_STATE_ADD, (unsigned long) prop1, (unsigned long) prop2, 0, 0);
+                  break;
+              }
+          case 'm': {
+                  // minimize window
+                  Atom prop1 = XInternAtom(disp, "_NET_WM_STATE_HIDDEN", False);
+                  send_client_msg(disp, target_window, (char *) "_NET_WM_STATE", _NET_WM_STATE_ADD, (unsigned long) prop1, (unsigned long) NULL, 0, 0);
+                  break;
+          }
+          default:
+              break;
+      }
     }
 }
 

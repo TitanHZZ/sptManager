@@ -43,7 +43,7 @@ static void manage_ad() {
         if (fork() == 0)
         {
             // close child process after spotify terminates
-            const std::string sptExecuteCmd = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyInstallationDir"]) + "spotify 2&> temp.log";
+            const std::string sptExecuteCmd = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyExecutablePath"]) + " 2&> temp.log";
             exit(system(sptExecuteCmd.c_str()));
         }
 
@@ -232,7 +232,7 @@ int main(int argc, char* argv[]) {
     get_initial_metadata(available_players);
 
     // callbacks for player actions
-    g_signal_connect(PLAYERCTL_PLAYER_MANAGER(manager), "name-appeared", G_CALLBACK(name_appeared_callback), NULL);
+    g_signal_connect(PLAYERCTL_PLAYER_MANAGER(manager), "name-appeared",   G_CALLBACK(name_appeared_callback),   NULL);
     g_signal_connect(PLAYERCTL_PLAYER_MANAGER(manager), "player-appeared", G_CALLBACK(player_appeared_callback), NULL);
     g_signal_connect(PLAYERCTL_PLAYER_MANAGER(manager), "player-vanished", G_CALLBACK(player_vanished_callback), NULL);
 

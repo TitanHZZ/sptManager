@@ -2,7 +2,7 @@
   "generalConfiguration": {
     "maximizeSpotify": true,
     "minimizeSpotify": true,
-    "SpotifyInstallationDir" : "C:/Users/Titan/AppData/Roaming/Spotify/"
+    "SpotifyExecutablePath": "/usr/bin/spotify-launcher"
   },
   "timings": {
     "timeToWaitAfterClosingSpotify": 1000,
