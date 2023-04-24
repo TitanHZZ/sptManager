@@ -118,7 +118,7 @@ bool checkAd(IAudioSessionManager2Ptr mgr) {
         {
             return false;
         }
-        
+
         IAudioSessionControl2Ptr control2;
         if (FAILED( control->QueryInterface(__uuidof(IAudioSessionControl2), (void**) &control2) ))
         {
@@ -206,7 +206,7 @@ void bypass_ad(nlohmann::json& config_j, HWND& spt_handle)
     Sleep(config_j["timings"]["timeToWaitAfterClosingSpotify"]);
 
     /// start spotify ///////////////
-    const std::string sptDir = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyInstallationDir"]) + "Spotify.exe";
+    const std::string sptDir = static_cast<std::string>(config_j["generalConfiguration"]["SpotifyExecutablePath"]);
     ShellExecuteA(NULL, "open", sptDir.c_str(), NULL, NULL, SW_SHOWMAXIMIZED);
 
     // wait for spotify

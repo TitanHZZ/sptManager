@@ -13,8 +13,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # vcpkg -- could alse change the config on vscode
-include("/opt/vcpkg/scripts/buildsystems/vcpkg.cmake") ## change for your system if needed
-# C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake
+# include("/opt/vcpkg/scripts/buildsystems/vcpkg.cmake") ## change for your system if needed
+include("C:/Program Files/vcpkg/scripts/buildsystems/vcpkg.cmake") ## change for your system if needed
 
 # get json package from vcpkg
 find_package(nlohmann_json CONFIG REQUIRED)
@@ -65,7 +65,7 @@ else()
 
     # get all windows source files
     file(GLOB SOURCES ${PROJECT_SOURCE_DIR}/src/windows/*.cpp)
-    # linux executable configs
+    # windows executable configs
     add_executable(${CMAKE_PROJECT_NAME} ${SOURCES})
     target_link_libraries(
         ${CMAKE_PROJECT_NAME}

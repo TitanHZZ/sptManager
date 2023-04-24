@@ -125,19 +125,6 @@ static gchar *get_window_title (Display *disp, Window win) {
 /// @param disp
 /// @param mode
 static void execute_action_window(Display *disp, char mode) {
-    /*Window *client_list;
-    unsigned long client_list_size;
-    if ((client_list = get_client_list(disp, &client_list_size)) == NULL) {
-        return;
-    }
-    for (int i = 0; i < client_list_size / sizeof(Window); i++) {
-        gchar *title_utf8 = get_window_title(disp, client_list[i]);
-        printf("%s\n", title_utf8 ? title_utf8 : "N/A");
-        g_free(title_utf8);
-    }
-    g_free(client_list);
-    return;*/
-
     Window target_window = 0;
     Window *client_list;
     unsigned long client_list_size;
@@ -160,12 +147,6 @@ static void execute_action_window(Display *disp, char mode) {
           g_free(window_name);
           break;
         }
-
-        /*if (!g_strcmp0(window_name, "Spotify")) {
-          target_window = client_list[i];
-          g_free(window_name);
-          break;
-        }*/
 
         g_free(window_name);
       }

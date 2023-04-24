@@ -26,8 +26,8 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Release
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/clang++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/bin/clang++
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
@@ -53,8 +53,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:FILEPATH=/usr/bin/clang
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/bin/clang
 
 //LLVM archiver
 CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
@@ -235,54 +235,6 @@ COVERAGE_COMMAND:FILEPATH=/usr/bin/gcov
 //Extra command line flags to pass to the coverage tool
 COVERAGE_EXTRA_FLAGS:STRING=-l
 
-//Enable to build Debian packages
-CPACK_BINARY_DEB:BOOL=OFF
-
-//Enable to build FreeBSD packages
-CPACK_BINARY_FREEBSD:BOOL=OFF
-
-//Enable to build IFW packages
-CPACK_BINARY_IFW:BOOL=OFF
-
-//Enable to build NSIS packages
-CPACK_BINARY_NSIS:BOOL=OFF
-
-//Enable to build RPM packages
-CPACK_BINARY_RPM:BOOL=OFF
-
-//Enable to build STGZ packages
-CPACK_BINARY_STGZ:BOOL=ON
-
-//Enable to build TBZ2 packages
-CPACK_BINARY_TBZ2:BOOL=OFF
-
-//Enable to build TGZ packages
-CPACK_BINARY_TGZ:BOOL=ON
-
-//Enable to build TXZ packages
-CPACK_BINARY_TXZ:BOOL=OFF
-
-//Enable to build TZ packages
-CPACK_BINARY_TZ:BOOL=ON
-
-//Enable to build RPM source packages
-CPACK_SOURCE_RPM:BOOL=OFF
-
-//Enable to build TBZ2 source packages
-CPACK_SOURCE_TBZ2:BOOL=ON
-
-//Enable to build TGZ source packages
-CPACK_SOURCE_TGZ:BOOL=ON
-
-//Enable to build TXZ source packages
-CPACK_SOURCE_TXZ:BOOL=ON
-
-//Enable to build TZ source packages
-CPACK_SOURCE_TZ:BOOL=ON
-
-//Enable to build ZIP source packages
-CPACK_SOURCE_ZIP:BOOL=OFF
-
 //How many times to retry timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_COUNT:STRING=3
 
@@ -304,66 +256,11 @@ MEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
 //File that contains suppressions for the memory checker
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
-//Arguments to supply to pkg-config
-PKG_CONFIG_ARGN:STRING=
-
-//pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
-
 //Name of the computer/site where compile is being run
 SITE:STRING=titanhzz-archcraft
 
-//Automatically copy dependencies into the output directory for
-// executables.
-VCPKG_APPLOCAL_DEPS:BOOL=ON
-
-//The directory which contains the installed libraries for each
-// triplet
-VCPKG_INSTALLED_DIR:PATH=/opt/vcpkg/installed
-
-//The path to the vcpkg manifest directory.
-VCPKG_MANIFEST_DIR:PATH=
-
-//Use manifest mode, as opposed to classic mode.
-VCPKG_MANIFEST_MODE:BOOL=OFF
-
-//Appends the vcpkg paths to CMAKE_PREFIX_PATH, CMAKE_LIBRARY_PATH
-// and CMAKE_FIND_ROOT_PATH so that vcpkg libraries/packages are
-// found after toolchain/system libraries/packages.
-VCPKG_PREFER_SYSTEM_LIBS:BOOL=OFF
-
-//Enable the setup of CMAKE_PROGRAM_PATH to vcpkg paths
-VCPKG_SETUP_CMAKE_PROGRAM_PATH:BOOL=ON
-
-//Vcpkg target triplet (ex. x86-windows)
-VCPKG_TARGET_TRIPLET:STRING=x64-linux
-
-//Enables messages from the VCPKG toolchain for debugging purposes.
-VCPKG_VERBOSE:BOOL=OFF
-
-//(experimental) Automatically copy dependencies into the install
-// target directory for executables. Requires CMake 3.14.
-X_VCPKG_APPLOCAL_DEPS_INSTALL:BOOL=OFF
-
-//(experimental) Add USES_TERMINAL to VCPKG_APPLOCAL_DEPS to force
-// serialization.
-X_VCPKG_APPLOCAL_DEPS_SERIALIZED:BOOL=OFF
-
-//Path to a program.
-Z_VCPKG_CL:FILEPATH=Z_VCPKG_CL-NOTFOUND
-
-//The directory which contains the installed libraries for each
-// triplet
-_VCPKG_INSTALLED_DIR:PATH=/opt/vcpkg/installed
-
 //The directory containing a CMake configuration file for nlohmann_json.
-nlohmann_json_DIR:PATH=/opt/vcpkg/installed/x64-linux/share/nlohmann_json
-
-//Path to a library.
-pkgcfg_lib_GLIB_glib-2.0:FILEPATH=/usr/lib/libglib-2.0.so
-
-//Path to a library.
-pkgcfg_lib_X11_X11:FILEPATH=/usr/lib/libX11.so
+nlohmann_json_DIR:PATH=nlohmann_json_DIR-NOTFOUND
 
 //Value Computed by CMake
 sptManager_BINARY_DIR:STATIC=/home/titanhzz/dev/c++/sptManager/build
@@ -530,147 +427,22 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 COVERAGE_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: COVERAGE_EXTRA_FLAGS
 COVERAGE_EXTRA_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_DEB
-CPACK_BINARY_DEB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_FREEBSD
-CPACK_BINARY_FREEBSD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_IFW
-CPACK_BINARY_IFW-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_NSIS
-CPACK_BINARY_NSIS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_RPM
-CPACK_BINARY_RPM-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_STGZ
-CPACK_BINARY_STGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TBZ2
-CPACK_BINARY_TBZ2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TGZ
-CPACK_BINARY_TGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TXZ
-CPACK_BINARY_TXZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_BINARY_TZ
-CPACK_BINARY_TZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_RPM
-CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TBZ2
-CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TGZ
-CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TXZ
-CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_TZ
-CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CPACK_SOURCE_ZIP
-CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_COUNT
 CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CTEST_SUBMIT_RETRY_DELAY
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
-//Details about finding PkgConfig
-FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v1.8.1()]
-//Details about finding nlohmann_json
-FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/opt/vcpkg/installed/x64-linux/share/nlohmann_json/nlohmann_jsonConfig.cmake][v3.11.2()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
-GLIB_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-4;-pthread
-GLIB_CFLAGS_I:INTERNAL=
-GLIB_CFLAGS_OTHER:INTERNAL=-pthread
-GLIB_FOUND:INTERNAL=1
-GLIB_INCLUDEDIR:INTERNAL=/usr/include
-GLIB_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-4
-GLIB_LDFLAGS:INTERNAL=-L/usr/lib;-lglib-2.0
-GLIB_LDFLAGS_OTHER:INTERNAL=
-GLIB_LIBDIR:INTERNAL=/usr/lib
-GLIB_LIBRARIES:INTERNAL=glib-2.0
-GLIB_LIBRARY_DIRS:INTERNAL=/usr/lib
-GLIB_LIBS:INTERNAL=
-GLIB_LIBS_L:INTERNAL=
-GLIB_LIBS_OTHER:INTERNAL=
-GLIB_LIBS_PATHS:INTERNAL=
-GLIB_MODULE_NAME:INTERNAL=glib-2.0
-GLIB_PREFIX:INTERNAL=/usr
-GLIB_STATIC_CFLAGS:INTERNAL=-I/usr/include/glib-2.0;-I/usr/lib/glib-2.0/include;-I/usr/include/sysprof-4;-pthread
-GLIB_STATIC_CFLAGS_I:INTERNAL=
-GLIB_STATIC_CFLAGS_OTHER:INTERNAL=-pthread
-GLIB_STATIC_INCLUDE_DIRS:INTERNAL=/usr/include/glib-2.0;/usr/lib/glib-2.0/include;/usr/include/sysprof-4
-GLIB_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lglib-2.0;-lm;-pthread;-L/usr/lib;-lsysprof-capture-4;-pthread;-lpcre2-8
-GLIB_STATIC_LDFLAGS_OTHER:INTERNAL=-pthread;-pthread
-GLIB_STATIC_LIBDIR:INTERNAL=
-GLIB_STATIC_LIBRARIES:INTERNAL=glib-2.0;m;sysprof-capture-4;pcre2-8
-GLIB_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib;/usr/lib
-GLIB_STATIC_LIBS:INTERNAL=
-GLIB_STATIC_LIBS_L:INTERNAL=
-GLIB_STATIC_LIBS_OTHER:INTERNAL=
-GLIB_STATIC_LIBS_PATHS:INTERNAL=
-GLIB_VERSION:INTERNAL=2.76.1
-GLIB_glib-2.0_INCLUDEDIR:INTERNAL=
-GLIB_glib-2.0_LIBDIR:INTERNAL=
-GLIB_glib-2.0_PREFIX:INTERNAL=
-GLIB_glib-2.0_VERSION:INTERNAL=
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
 MEMORYCHECK_COMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_SUPPRESSIONS_FILE
 MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PKG_CONFIG_ARGN
-PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
-PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: SITE
 SITE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: VCPKG_VERBOSE
-VCPKG_VERBOSE-ADVANCED:INTERNAL=1
-X11_CFLAGS:INTERNAL=
-X11_CFLAGS_I:INTERNAL=
-X11_CFLAGS_OTHER:INTERNAL=
-X11_FOUND:INTERNAL=1
-X11_INCLUDEDIR:INTERNAL=/usr/include
-X11_INCLUDE_DIRS:INTERNAL=
-X11_LDFLAGS:INTERNAL=-L/usr/lib;-lX11
-X11_LDFLAGS_OTHER:INTERNAL=
-X11_LIBDIR:INTERNAL=/usr/lib
-X11_LIBRARIES:INTERNAL=X11
-X11_LIBRARY_DIRS:INTERNAL=/usr/lib
-X11_LIBS:INTERNAL=
-X11_LIBS_L:INTERNAL=
-X11_LIBS_OTHER:INTERNAL=
-X11_LIBS_PATHS:INTERNAL=
-X11_MODULE_NAME:INTERNAL=x11
-X11_PREFIX:INTERNAL=/usr
-X11_STATIC_CFLAGS:INTERNAL=
-X11_STATIC_CFLAGS_I:INTERNAL=
-X11_STATIC_CFLAGS_OTHER:INTERNAL=
-X11_STATIC_INCLUDE_DIRS:INTERNAL=
-X11_STATIC_LDFLAGS:INTERNAL=-L/usr/lib;-lX11;-lpthread;-L/usr/lib;-lxcb;-L/usr/lib;-lXau;-lXdmcp
-X11_STATIC_LDFLAGS_OTHER:INTERNAL=
-X11_STATIC_LIBDIR:INTERNAL=
-X11_STATIC_LIBRARIES:INTERNAL=X11;pthread;xcb;Xau;Xdmcp
-X11_STATIC_LIBRARY_DIRS:INTERNAL=/usr/lib;/usr/lib;/usr/lib
-X11_STATIC_LIBS:INTERNAL=
-X11_STATIC_LIBS_L:INTERNAL=
-X11_STATIC_LIBS_OTHER:INTERNAL=
-X11_STATIC_LIBS_PATHS:INTERNAL=
-X11_VERSION:INTERNAL=1.8.4
-X11_x11_INCLUDEDIR:INTERNAL=
-X11_x11_LIBDIR:INTERNAL=
-X11_x11_PREFIX:INTERNAL=
-X11_x11_VERSION:INTERNAL=
-//Making sure VCPKG_MANIFEST_MODE doesn't change
-Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=OFF
-//Vcpkg root directory
-Z_VCPKG_ROOT_DIR:INTERNAL=/opt/vcpkg
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
-__pkg_config_arguments_GLIB:INTERNAL=REQUIRED;glib-2.0
-__pkg_config_arguments_X11:INTERNAL=REQUIRED;x11
-__pkg_config_checked_GLIB:INTERNAL=1
-__pkg_config_checked_X11:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_GLIB_glib-2.0
-pkgcfg_lib_GLIB_glib-2.0-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: pkgcfg_lib_X11_X11
-pkgcfg_lib_X11_X11-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/usr/lib
 
