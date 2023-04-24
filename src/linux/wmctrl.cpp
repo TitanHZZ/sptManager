@@ -97,31 +97,77 @@ static void send_client_msg(Display *disp, Window win, char *msg, unsigned long 
   XSendEvent(disp, DefaultRootWindow(disp), False, mask, &event);
 }
 
+static gchar *get_window_title (Display *disp, Window win) {
+    gchar *title_utf8;
+    gchar *wm_name;
+    gchar *net_wm_name;
+
+    wm_name = get_window_property(disp, win, XA_STRING, (gchar *)"WM_NAME", NULL);
+    net_wm_name = get_window_property(disp, win, XInternAtom(disp, "UTF8_STRING", False), (gchar *)"_NET_WM_NAME", NULL);
+
+    if (net_wm_name) {
+        title_utf8 = g_strdup(net_wm_name);
+    } else {
+        if (wm_name) {
+            title_utf8 = g_locale_to_utf8(wm_name, -1, NULL, NULL, NULL);
+        } else {
+            title_utf8 = NULL;
+        }
+    }
+
+    g_free(wm_name);
+    g_free(net_wm_name);
+    
+    return title_utf8;
+}
+
+/// @brief
+/// @param disp
+/// @param mode
 static void execute_action_window(Display *disp, char mode) {
+    /*Window *client_list;
+    unsigned long client_list_size;
+    if ((client_list = get_client_list(disp, &client_list_size)) == NULL) {
+        return;
+    }
+    for (int i = 0; i < client_list_size / sizeof(Window); i++) {
+        gchar *title_utf8 = get_window_title(disp, client_list[i]);
+        printf("%s\n", title_utf8 ? title_utf8 : "N/A");
+        g_free(title_utf8);
+    }
+    g_free(client_list);
+    return;*/
+
     Window target_window = 0;
     Window *client_list;
     unsigned long client_list_size;
 
     if ((client_list = get_client_list(disp, &client_list_size)) == NULL) {
-      return;
+        return;
     }
 
     for (size_t i = 0; i < client_list_size / sizeof(Window); i++) {
       // get window name from id
-      gchar *window_name = get_window_property(disp, client_list[i], XA_STRING, (gchar *) "WM_NAME", NULL);
+      gchar *window_name = get_window_title(disp, client_list[i]);
 
       if (window_name) {
 
-          // check if window has "Spotify" in its name (Spotify client has changed name several times before but "Spotify" is always in its name)
-          // check substring
-          if (strstr(window_name, "Spotify"))
-          {
-            target_window = client_list[i];
-            g_free(window_name);
-            break;
-          }
-
+        // check if window has "Spotify" in its name (Spotify client has changed name several times before but "Spotify" is always in its name)
+        // check substring
+        if (strstr(window_name, "Spotify"))
+        {
+          target_window = client_list[i];
           g_free(window_name);
+          break;
+        }
+
+        /*if (!g_strcmp0(window_name, "Spotify")) {
+          target_window = client_list[i];
+          g_free(window_name);
+          break;
+        }*/
+
+        g_free(window_name);
       }
     }
 
